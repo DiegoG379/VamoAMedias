@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Colores */
+$color1: #32AEC3;
+$color2: #CCCCCC;
+
+.encabezado {
+    margin: 0;
+    width: auto;
+    height: 125px;
+    background-color: $color1;
+}
+
+.logo {
+    width: 125px;
+    height: auto;
+    padding-left: 25px;
+}
+
+.titulo {
+    text-align: left;
+    font-size: 50px;
+    color: $color2;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.iconosRedes {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconosRedes a {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    color: $color2;
+    border: solid 2px;
+    border-radius: 90px;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.derechos {
+    font-size: 20px;
+    color: $color2;
+}
