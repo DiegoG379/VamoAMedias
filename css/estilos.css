@@ -3,6 +3,15 @@ body {
   box-sizing: border-box;
 }
 
+/* Fuentes */
+@font-face {
+  font-family: Shizuru;
+  src: url(../media/fonts/Shizuru-Regular.ttf);
+}
+@font-face {
+  font-family: TiltNeon;
+  src: url(../media/fonts/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf);
+}
 /* Colores */
 .encabezado {
   margin: 0;
@@ -21,6 +30,9 @@ body {
   text-align: left;
   font-size: 50px;
   color: #CCCCCC;
+  font-family: Shizuru;
+  font-weight: bolder;
+  letter-spacing: -2px;
 }
 
 .redes {
@@ -54,11 +66,13 @@ body {
 }
 
 .derechos {
+  font-family: TiltNeon;
   font-size: 20px;
   color: #CCCCCC;
 }
 
 .introduccion {
+  font-family: TiltNeon;
   width: 80%;
   text-align: center;
   margin: auto;
@@ -66,7 +80,7 @@ body {
   color: #32AEC3;
 }
 .introduccion h1 {
-  font-size: 50px;
+  font-size: 70px;
   padding: 0 0 35px 0;
 }
 .introduccion p {
@@ -74,6 +88,7 @@ body {
 }
 
 .formulario {
+  font-family: TiltNeon;
   font-size: 16px;
   text-align: center;
   margin: 0 auto;
@@ -87,6 +102,7 @@ body {
   color: #32AEC3;
   background-color: #CCCCCC;
   box-shadow: 2px 2px 4px #32AEC3, -2px -2px 4px #32AEC3;
+  border: solid black 2px;
 }
 .formulario input::-moz-placeholder {
   color: #32AEC3;
@@ -106,6 +122,7 @@ body {
   background-color: #CCCCCC;
   font-weight: bold;
   box-shadow: 2px 2px 4px #32AEC3, -2px -2px 4px #32AEC3;
+  border: solid black 2px;
 }
 .formulario button {
   width: 100px;
@@ -118,11 +135,13 @@ body {
   background-color: #32AEC3;
   font-weight: bold;
   box-shadow: 2px 2px 4px #CCCCCC, -2px -2px 4px #CCCCCC;
+  border: solid black 2px;
 }
 
 .resultados {
+  font-family: TiltNeon;
   width: 70%;
-  height: 250px;
+  height: auto;
   background-color: #CCCCCC;
   color: #32AEC3;
   box-shadow: 2px 2px 4px #32AEC3, -2px -2px 4px #32AEC3;
@@ -132,4 +151,19 @@ body {
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
+}
+
+.lista {
+  margin-top: 25px;
+}
+.lista li {
+  list-style-type: none;
+  width: 500px;
+  height: 28px;
+  padding: auto;
+  margin: 10px auto 10px auto;
+  box-shadow: 2px 2px 4px #32AEC3, -2px -2px 4px #32AEC3;
+  background-color: #CCCCCC;
+  border-radius: 5px;
+  border: solid black 2px;
 }/*# sourceMappingURL=estilos.css.map */

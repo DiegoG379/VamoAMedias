@@ -3,6 +3,17 @@ body {
     box-sizing: border-box;
 }
 
+/* Fuentes */
+@font-face {
+    font-family: Shizuru;
+    src: url(../media/fonts/Shizuru-Regular.ttf);
+}
+
+@font-face {
+    font-family: TiltNeon;
+    src: url(../media/fonts/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf);
+}
+
 /* Colores */
 $color1: #32AEC3;
 $color2: #CCCCCC;
@@ -24,6 +35,9 @@ $color2: #CCCCCC;
     text-align: left;
     font-size: 50px;
     color: $color2;
+    font-family: Shizuru;
+    font-weight: bolder;
+    letter-spacing: -2px;
 }
 
 .redes {
@@ -57,11 +71,13 @@ $color2: #CCCCCC;
 }
 
 .derechos {
+    font-family: TiltNeon;
     font-size: 20px;
     color: $color2;
 }
 
 .introduccion{
+    font-family: TiltNeon;
     width: 80%;
     text-align: center;
     margin: auto;
@@ -69,7 +85,7 @@ $color2: #CCCCCC;
     color: $color1;
     
     & h1 {
-        font-size: 50px;
+        font-size: 70px;
         padding: 0 0 35px 0;
     }
 
@@ -79,6 +95,7 @@ $color2: #CCCCCC;
 }
 
 .formulario{
+    font-family: TiltNeon;
     font-size: 16px;
     text-align: center;
     margin: 0 auto;
@@ -92,6 +109,7 @@ $color2: #CCCCCC;
         color: $color1;
         background-color: $color2;
         box-shadow: 2px 2px 4px $color1, -2px -2px 4px $color1;
+        border: solid black 2px;
 
         &::placeholder{
             color: $color1;
@@ -109,6 +127,7 @@ $color2: #CCCCCC;
         background-color: $color2;
         font-weight: bold;
         box-shadow: 2px 2px 4px $color1, -2px -2px 4px $color1;
+        border: solid black 2px;
     }
 
     & button {
@@ -122,12 +141,14 @@ $color2: #CCCCCC;
         background-color: $color1;
         font-weight: bold;
         box-shadow: 2px 2px 4px $color2, -2px -2px 4px $color2;
+        border: solid black 2px;
     }
 }
 
 .resultados{
+    font-family: TiltNeon;
     width: 70%;
-    height: 250px;
+    height: auto;
     background-color: $color2;
     color: $color1;
     box-shadow: 2px 2px 4px $color1, -2px -2px 4px $color1;
@@ -137,4 +158,20 @@ $color2: #CCCCCC;
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.lista { 
+    margin-top: 25px;
+
+    & li{
+    list-style-type: none;
+    width: 500px;
+    height: 28px;
+    padding: auto;
+    margin: 10px auto 10px auto;
+    box-shadow: 2px 2px 4px $color1, -2px -2px 4px $color1;
+    background-color: $color2;
+    border-radius: 5px;
+    border: solid black 2px;
+    }
 }
