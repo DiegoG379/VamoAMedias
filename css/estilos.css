@@ -56,4 +56,80 @@ body {
 .derechos {
   font-size: 20px;
   color: #CCCCCC;
+}
+
+.introduccion {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding: 35px 0 35px 0;
+  color: #32AEC3;
+}
+.introduccion h1 {
+  font-size: 50px;
+  padding: 0 0 35px 0;
+}
+.introduccion p {
+  font-size: 20px;
+}
+
+.formulario {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+.formulario input {
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 15px 3px 3px 3px;
+  color: #32AEC3;
+  background-color: #CCCCCC;
+  box-shadow: 2px 2px 4px #32AEC3, -2px -2px 4px #32AEC3;
+}
+.formulario input::-moz-placeholder {
+  color: #32AEC3;
+  font-weight: bold;
+}
+.formulario input::placeholder {
+  color: #32AEC3;
+  font-weight: bold;
+}
+.formulario select {
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 15px 3px 3px 3px;
+  color: #32AEC3;
+  background-color: #CCCCCC;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px #32AEC3, -2px -2px 4px #32AEC3;
+}
+.formulario button {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 15px 3px 3px 3px;
+  padding-bottom: 25px;
+  color: white;
+  background-color: #32AEC3;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px #CCCCCC, -2px -2px 4px #CCCCCC;
+}
+
+.resultados {
+  width: 70%;
+  height: 250px;
+  background-color: #CCCCCC;
+  color: #32AEC3;
+  box-shadow: 2px 2px 4px #32AEC3, -2px -2px 4px #32AEC3;
+  text-align: center;
+  margin: 35px auto 15px auto;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
 }/*# sourceMappingURL=estilos.css.map */

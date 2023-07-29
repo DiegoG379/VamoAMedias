@@ -60,3 +60,81 @@ $color2: #CCCCCC;
     font-size: 20px;
     color: $color2;
 }
+
+.introduccion{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 35px 0 35px 0;
+    color: $color1;
+    
+    & h1 {
+        font-size: 50px;
+        padding: 0 0 35px 0;
+    }
+
+    & p{
+        font-size: 20px;
+    }
+}
+
+.formulario{
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+
+    & input {
+        width: 250px;
+        height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        margin: 15px 3px 3px 3px;
+        color: $color1;
+        background-color: $color2;
+        box-shadow: 2px 2px 4px $color1, -2px -2px 4px $color1;
+
+        &::placeholder{
+            color: $color1;
+            font-weight: bold;
+        }
+    }
+
+    & select {
+        width: 250px;
+        height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        margin: 15px 3px 3px 3px;
+        color: $color1;
+        background-color: $color2;
+        font-weight: bold;
+        box-shadow: 2px 2px 4px $color1, -2px -2px 4px $color1;
+    }
+
+    & button {
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        margin: 15px 3px 3px 3px;
+        padding-bottom: 25px;
+        color: white;
+        background-color: $color1;
+        font-weight: bold;
+        box-shadow: 2px 2px 4px $color2, -2px -2px 4px $color2;
+    }
+}
+
+.resultados{
+    width: 70%;
+    height: 250px;
+    background-color: $color2;
+    color: $color1;
+    box-shadow: 2px 2px 4px $color1, -2px -2px 4px $color1;
+    text-align: center;
+    margin: 35px auto 15px auto;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
