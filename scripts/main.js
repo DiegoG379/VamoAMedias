@@ -1,37 +1,63 @@
-// Ingreso y gestión de personas y nombres - Inicio
-document.addEventListener("DOMContentLoaded", function() {    
+//Ingreso para tres personas - Inicio
+let nombreTres = "";
+let verificarTres = false;
+
+function agregarTercerPersona(){
+    const cantidadPersonas = document.getElementById("cantidadPersonas");
+    nombreTres = document.getElementById("nombreTres").value
+    const valorSeleccionado = cantidadPersonas.value;
+
+    if (valorSeleccionado === "valor3"){
+        tercerPersona.style.display = 'block';
+        verificarTres = true;
+    } else {
+        tercerPersona.style.display = 'none';
+        verificarTres = false;
+    };
+};
+
+//Ingreso para tres personas - Final
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    // Ingreso y gestión de personas y nombres - Inicio
+    
+    let cantPersonas;
+    let nombreUno;
+    let nombreDos;
+    
     function guardarNombres(){
         const cantidadPersonas = document.getElementById("cantidadPersonas");
-        const cantPersonas = cantidadPersonas.value;
-        const nombreUno = document.getElementById("nombreUno").value;
-        const nombreDos = document.getElementById("nombreDos").value;
+        cantPersonas = cantidadPersonas.value;
+        nombreUno = document.getElementById("nombreUno").value;
+        nombreDos = document.getElementById("nombreDos").value;
+    
+        nombres = [];
+
+        nombres.push(nombreUno);
+        nombres.push(nombreDos);
+    
+        if (verificarTres === true){
+            nombreTres = document.getElementById("nombreTres").value
+            nombres.push(nombreTres);
+        } else {
+            const eliminarTercerNombre = nombres.indexOf(nombreTres);
+            if (eliminarTercerNombre !== -1) {
+            nombres.splice(eliminarTercerNombre, 1);
+            }
+        }
+        
+    
+        alert(nombres)
     };
-    document.getElementById("ingresar").addEventListener("click", guardarNombres);
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Ingreso y gestión de personas y nombres - Final
 
 // Ingreso y gestión de articulos, precios y personas que hicieron la compra - Inicio
-const gastos = [];
+    gastos = [];
 
-document.addEventListener("DOMContentLoaded", function () {
     function agregarGasto() {
         const item = document.getElementById("item").value;
         const precio = document.getElementById("precio").value;
-        const nombre = document.getElementById("nombre").value;
 
         if (item.trim() === "" || isNaN(precio) || precio <= 0){
             alert("complete los campos");
@@ -40,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const listaGastos = {
             item: item,
             precio: precio,
-            nombre: nombre,
         };
 
         gastos.push(listaGastos);
@@ -54,14 +79,15 @@ document.addEventListener("DOMContentLoaded", function () {
         gastos.forEach((gasto, indice) => {
             const elementoLista = document.createElement("li");
             const textoElemento = document.createTextNode(
-                `${gasto.nombre} compró ${gasto.item} a $${gasto.precio}`
+                ` compró ${gasto.item} a $${gasto.precio}`
             );
 
             elementoLista.appendChild(textoElemento);
             lista.appendChild(elementoLista);
         });
     }
+// Ingreso y gestión de articulos, precios y personas que hicieron la compra - Final
 
+    document.getElementById("ingresar").addEventListener("click", guardarNombres);
     document.getElementById("agregar").addEventListener("click", agregarGasto);
 });
-// Ingreso y gestión de articulos, precios y personas que hicieron la compra - Final
