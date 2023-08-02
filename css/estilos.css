@@ -103,6 +103,7 @@ body {
   background-color: #CCCCCC;
   box-shadow: 2px 2px 4px #32AEC3, -2px -2px 4px #32AEC3;
   border: solid black 2px;
+  text-transform: capitalize;
 }
 .formulario input::-moz-placeholder {
   color: #32AEC3;
@@ -123,8 +124,9 @@ body {
   font-weight: bold;
   box-shadow: 2px 2px 4px #32AEC3, -2px -2px 4px #32AEC3;
   border: solid black 2px;
+  text-transform: capitalize;
 }
-.formulario button {
+.formulario .boton {
   width: 100px;
   height: 30px;
   text-align: center;
@@ -157,13 +159,25 @@ body {
   margin-top: 25px;
 }
 .lista li {
+  color: #32AEC3;
+  font-weight: bolder;
+  font-size: 18px;
+  font-family: TiltNeon;
   list-style-type: none;
-  width: 500px;
-  height: 28px;
   padding: auto;
   margin: 10px auto 10px auto;
-  box-shadow: 2px 2px 4px #32AEC3, -2px -2px 4px #32AEC3;
-  background-color: #CCCCCC;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 0px #CCCCCC;
+}
+.lista button {
+  margin-left: 20px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
   border-radius: 5px;
+  color: white;
+  background-color: #32AEC3;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px #CCCCCC, -2px -2px 4px #CCCCCC;
   border: solid black 2px;
 }/*# sourceMappingURL=estilos.css.map */

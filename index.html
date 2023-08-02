@@ -40,32 +40,32 @@
     </article>
     <form class="formulario">
         <div>
-            <select id="cantidadPersonas" onchange="agregarTercerPersona()">
+            <select id="cantidadPersonas">
                 <option disabled selected value="">Cantidad de personas</option>
                 <option value="valor2" id="dosPersonas">2 Personas</option>
                 <option value="valor3" id="tresPersonas">3 Personas</option>
             </select>
-            <input type="text" id="nombreUno" placeholder="Escribe el primer nombre">
-            <input type="text" id="nombreDos" placeholder="Escribe el segundo nombre">
+            <div>
+                <input type="text" id="nombreUno" placeholder="Escribe el primer nombre">
+                <input type="text" id="nombreDos" placeholder="Escribe el segundo nombre">
+            </div>
             <div id="tercerPersona" style="display: none;">
                 <input type="text" id="nombreTres" placeholder="Escribe el tercer nombre">
             </div>
-            <button id="ingresar" type="button">INGRESAR</button>
+            <button class="boton" id="ingresar" type="button">INGRESAR</button>
         </div>
         <div>
             <input type="text" id="item" placeholder="Escribe el artículo">
             <input type="text" id="precio" placeholder="Escribe el precio">
             <select id="Personas">
                 <option disabled selected value="">¿Quién realizó el pago?</option>
-                <option value="nomUno" id="personaUno"></option>
-                <option value="nomDos" id="personaDos"></option>
             </select>
-            <button id="agregar" type="button">AGREGAR</button>
+            <button class="boton" id="agregar" type="button">AGREGAR</button>
         </div>
         
         <ul class="lista" id="listaDeGastos"></ul>
 
-        <button>CALCULAR</button>
+        <button class="boton" id="calcular">CALCULAR</button>
     </form>
 
     <div class="resultados">

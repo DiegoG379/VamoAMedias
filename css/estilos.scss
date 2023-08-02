@@ -110,6 +110,7 @@ $color2: #CCCCCC;
         background-color: $color2;
         box-shadow: 2px 2px 4px $color1, -2px -2px 4px $color1;
         border: solid black 2px;
+        text-transform: capitalize;
 
         &::placeholder{
             color: $color1;
@@ -128,9 +129,10 @@ $color2: #CCCCCC;
         font-weight: bold;
         box-shadow: 2px 2px 4px $color1, -2px -2px 4px $color1;
         border: solid black 2px;
+        text-transform: capitalize;
     }
 
-    & button {
+    & .boton {
         width: 100px;
         height: 30px;
         text-align: center;
@@ -160,18 +162,31 @@ $color2: #CCCCCC;
     font-weight: bold;
 }
 
-.lista { 
+.lista{ 
     margin-top: 25px;
 
     & li{
-    list-style-type: none;
-    width: 500px;
-    height: 28px;
-    padding: auto;
-    margin: 10px auto 10px auto;
-    box-shadow: 2px 2px 4px $color1, -2px -2px 4px $color1;
-    background-color: $color2;
-    border-radius: 5px;
-    border: solid black 2px;
+        color: $color1;
+        font-weight: bolder;
+        font-size: 18px;
+        font-family: TiltNeon;
+        list-style-type: none;
+        padding: auto;
+        margin: 10px auto 10px auto;
+        text-transform: capitalize;
+        text-shadow: 1px 1px 0px $color2;
+    }
+
+    & button{
+        margin-left: 20px;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        background-color: $color1;
+        font-weight: bold;
+        box-shadow: 2px 2px 4px $color2, -2px -2px 4px $color2;
+        border: solid black 2px;
     }
 }
