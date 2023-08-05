@@ -38,26 +38,26 @@
         <p>¿Alguna vez has salido a comer o a divertirte con amigos y, al final, enfrentaron el dilema de dividir la cuenta de manera justa? ¡Ya no te preocupes por eso! En Vamo' a Media$, hemos creado la herramienta perfecta para resolver ese problema de forma rápida y sencilla.</p>
         <p>Nuestra plataforma intuitiva te permite ingresar el total de la cuenta, los productos o servicios consumidos por cada persona y cualquier costo adicional, como impuestos y propinas. Después, con solo un clic, obtendrás la distribución de la cuenta entre todos los involucrados. Ya no habrá necesidad de hacer complicados cálculos mentales ni de preocuparte por si alguien pagó de más o de menos. Vamo' a Media$ se encarga de todo para que tú puedas enfocarte en disfrutar de la compañía de tus seres queridos.</p>
     </article>
-    <form class="formulario">
+    <form class="formulario" id="formulario" name="formulario">
         <div>
             <select id="cantidadPersonas">
                 <option disabled selected value="">Cantidad de personas</option>
-                <option value="valor2" id="dosPersonas">2 Personas</option>
-                <option value="valor3" id="tresPersonas">3 Personas</option>
+                <option value="valor2" name="valor2" id="dosPersonas">2 Personas</option>
+                <option value="valor3" name="valor3" id="tresPersonas">3 Personas</option>
             </select>
             <div>
-                <input type="text" id="nombreUno" placeholder="Escribe el primer nombre">
-                <input type="text" id="nombreDos" placeholder="Escribe el segundo nombre">
+                <input type="text" id="nombreUno" name="nombreUno" placeholder="Escribe el primer nombre">
+                <input type="text" id="nombreDos" name="nombreDos" placeholder="Escribe el segundo nombre">
             </div>
             <div id="tercerPersona" style="display: none;">
-                <input type="text" id="nombreTres" placeholder="Escribe el tercer nombre">
+                <input type="text" id="nombreTres" name="nombreTres" placeholder="Escribe el tercer nombre">
             </div>
             <button class="boton" id="ingresar" type="button">INGRESAR</button>
         </div>
         <div>
-            <input type="text" id="item" placeholder="Escribe el artículo">
-            <input type="text" id="precio" placeholder="Escribe el precio">
-            <select id="Personas">
+            <input type="text" name="item" id="item" placeholder="Escribe el artículo">
+            <input type="text" name="precio" id="precio" placeholder="Escribe el precio">
+            <select id="Personas" name="Personas">
                 <option disabled selected value="">¿Quién realizó el pago?</option>
             </select>
             <button class="boton" id="agregar" type="button">AGREGAR</button>
@@ -65,12 +65,13 @@
         
         <ul class="lista" id="listaDeGastos"></ul>
 
-        <button class="boton" id="calcular">CALCULAR</button>
+        <button class="boton" id="calcular" type="button">CALCULAR</button>
+        <button class="boton" id="guardar" type="button">GUARDAR</button>
+        <button class="boton" id="borrar" type="submit">BORRAR</button>
     </form>
 
-    <div class="resultados">
-        <p>Nombre 1 le debe a Nombre 2 $xx y a Nombre 3 $xx.</p>
-        <p>Nombre2 le debe a Nombre 3 $xx.</p>
+    <div id="resultados" class="resultados">
+        <h2>¡Resultados!</h2>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

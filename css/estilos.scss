@@ -148,18 +148,19 @@ $color2: #CCCCCC;
 }
 
 .resultados{
+    text-transform: uppercase;
     font-family: TiltNeon;
-    width: 70%;
+    width: 50%;
     height: auto;
     background-color: $color2;
     color: $color1;
     box-shadow: 2px 2px 4px $color1, -2px -2px 4px $color1;
     text-align: center;
     margin: 35px auto 15px auto;
-    padding: 20px;
+    padding: 20px 10px 10px 10px;
     border-radius: 5px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .lista{ 
