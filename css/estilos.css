@@ -181,4 +181,24 @@ body {
   font-weight: bold;
   box-shadow: 2px 2px 4px #CCCCCC, -2px -2px 4px #CCCCCC;
   border: solid black 2px;
+}
+
+.my-custom-button {
+  width: 105px;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 15px 3px 3px 3px;
+  color: white;
+  background-color: #32AEC3;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px black, -2px -2px 4px #CCCCCC;
+  border: solid black 2px;
+}
+
+.my-custom-popup {
+  background-color: #CCCCCC;
+  color: #32AEC3;
+  text-shadow: 1px 1px 0px black;
+  box-shadow: 2px 2px 4px #32AEC3, -2px -2px 4px #32AEC3;
 }/*# sourceMappingURL=estilos.css.map */
