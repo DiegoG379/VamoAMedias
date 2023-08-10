@@ -202,4 +202,138 @@ body {
   color: #32AEC3;
   text-shadow: 1px 1px 0px black;
   box-shadow: 2px 2px 4px #32AEC3, -2px -2px 4px #32AEC3;
+}
+
+@media screen and (max-width: 450px) {
+  .encabezado {
+    height: 370px;
+  }
+  .logo {
+    width: 150px;
+    margin: auto;
+    padding: auto;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo {
+    text-align: center;
+    font-size: 33px;
+    letter-spacing: -2px;
+  }
+  .derechos {
+    font-size: 16px;
+    text-align: center;
+  }
+  .introduccion {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding: 35px 0 35px 0;
+  }
+  .introduccion h1 {
+    font-size: 51px;
+    padding: 0 0 35px 0;
+  }
+  .introduccion p {
+    font-size: 20px;
+  }
+  .resultados {
+    width: 85%;
+    height: auto;
+    margin: 35px auto 15px auto;
+    padding: 10px 5px 5px 5px;
+    font-size: 18px;
+  }
+  .lista {
+    margin-top: 25px;
+  }
+  .lista li {
+    font-size: 17px;
+    margin: 10px auto 10px auto;
+  }
+  .lista button {
+    margin-left: 10px;
+    width: 75px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 990px) {
+  .encabezado {
+    height: 370px;
+  }
+  .logo {
+    width: 150px;
+    margin: auto;
+    padding: auto;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+  .derechos {
+    font-size: 20px;
+    text-align: center;
+  }
+  .introduccion {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    padding: 35px 0 35px 0;
+  }
+  .introduccion h1 {
+    font-size: 70px;
+    padding: 0 0 35px 0;
+  }
+  .introduccion p {
+    font-size: 20px;
+  }
+  .resultados {
+    width: 80%;
+    height: auto;
+    margin: 35px auto 15px auto;
+    padding: 10px 5px 5px 5px;
+    font-size: 18px;
+  }
+  .lista {
+    margin-top: 25px;
+  }
+  .lista li {
+    font-size: 18px;
+    margin: 10px auto 10px auto;
+  }
+  .lista button {
+    margin-left: 10px;
+    width: 75px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1240px) {
+  .encabezado {
+    height: 150px;
+  }
+  .logo {
+    width: 150px;
+    margin: auto;
+    padding: auto;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+  .derechos {
+    font-size: 20px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=estilos.css.map */
